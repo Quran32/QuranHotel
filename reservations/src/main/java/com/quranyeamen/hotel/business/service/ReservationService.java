@@ -1,5 +1,6 @@
 package com.quranyeamen.hotel.business.service;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
@@ -57,6 +58,11 @@ public class ReservationService {
 			});
 
 		}
-		return null;
+		List <RoomReservation> roomReservations = new ArrayList<>();
+		for(Long roomId:roomReservationMap.keySet()) {
+			roomReservations.add(roomReservationMap.get(roomId));
+		
+		}
+		return roomReservations;
 	}
 }
