@@ -9,5 +9,5 @@ import java.util.List;
 
 @Repository
 public interface ReservationRepository extends CrudRepository<ReservationDE, Long> {
-    List<ReservationDE> findByDate(Date date);
+	List<ReservationDE> findByDate(Date date);
 }

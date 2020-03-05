@@ -9,49 +9,49 @@ import javax.persistence.Table;
 import java.sql.Date;
 
 @Entity
-@Table(name="RESERVATION")
+@Table(name = "RESERVATION")
 public class ReservationDE {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name="RESERVATION_ID")
-    private long id;
-    @Column(name="ROOM_ID")
-    private long roomId;
-    @Column(name="GUEST_ID")
-    private long guestId;
-    @Column(name="RES_DATE")
-    private Date date;
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name = "RESERVATION_ID")
+	private long id;
+	@Column(name = "ROOM_ID")
+	private long roomId;
+	@Column(name = "GUEST_ID")
+	private long guestId;
+	@Column(name = "RES_DATE")
+	private Date date;
 
-    public long getId() {
-        return id;
-    }
+	public long getId() {
+		return id;
+	}
 
-    public void setId(long id) {
-        this.id = id;
-    }
+	public void setId(long id) {
+		this.id = id;
+	}
 
-    public long getRoomId() {
-        return roomId;
-    }
+	public long getRoomId() {
+		return roomId;
+	}
 
-    public void setRoomId(long roomId) {
-        this.roomId = roomId;
-    }
+	public void setRoomId(long roomId) {
+		this.roomId = roomId;
+	}
 
-    public long getGuestId() {
-        return guestId;
-    }
+	public long getGuestId() {
+		return guestId;
+	}
 
-    public void setGuestId(long guestId) {
-        this.guestId = guestId;
-    }
+	public void setGuestId(long guestId) {
+		this.guestId = guestId;
+	}
 
-    public Date getDate() {
-        return date;
-    }
+	public Date getDate() {
+		return date;
+	}
 
-    public void setDate(Date date) {
-        this.date = date;
-    }
+	public void setDate(Date date) {
+		this.date = date;
+	}
 }
