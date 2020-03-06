@@ -1,10 +1,10 @@
 package com.quranyeamen.hotel.data.repository;
 
 import org.springframework.data.repository.PagingAndSortingRepository;
-import com.quranyeamen.hotel.data.entity.GuestDE;
 import org.springframework.stereotype.Repository;
+import com.quranyeamen.hotel.data.entity.Guest;
 
 @Repository
-public interface GuestRepository extends PagingAndSortingRepository<GuestDE, Long> {
+public interface GuestRepository extends PagingAndSortingRepository<Guest, Long> {
 
 }
