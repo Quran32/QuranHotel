@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class ReservationController {
 	
 	
-	
 	@RequestMapping(method = RequestMethod.GET)
 	public String getReservations() {
 		return "reservations";
